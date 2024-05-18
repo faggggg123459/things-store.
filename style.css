@@ -4,14 +4,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f9fa; /* Колір тла */
 }
 
 header {
-    background-color: #333;
+    background-color: #343a40; /* Темний колір для контрасту */
     color: #fff;
     padding: 20px;
     text-align: center;
-    transition: background-color 0.3s ease;
 }
 
 h1 {
@@ -19,11 +19,11 @@ h1 {
 }
 
 header:hover {
-    background-color: #555; /* Зміна фону при наведенні */
+    background-color: #495057; /* Зміна фону при наведенні */
 }
 
 nav {
-    background-color: #444;
+    background-color: #495057; /* Темний колір для контрасту */
     padding: 10px;
     text-align: center;
 }
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #666;
+    background-color: #6c757d; /* Зміна фону при наведенні */
 }
 
 main {
@@ -50,42 +50,43 @@ main {
     width: 30%;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Колір фону категорії */
     border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-
-.category img {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    border: 2px solid #ddd; /* Колір рамки */
-    border-radius: 5px; /* Закругленість кутів */
-}
-
-.category img:hover {
-    transform: scale(1.1);
-    opacity: 0.8; /* Затемнення */
-    border-color: #666; /* Зміна коліру рамки при наведенні */
-}
-
-.category h2 {
-    transition: font-size 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для контейнера категорії */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category:hover {
-    transform: translateY(-10px); /* Зсув вгору на 10px */
+    transform: translateY(-5px); /* Зсув вгору на 5px при наведенні */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Збільшена тінь при наведенні */
+}
+
+.category img {
+    max-width: 100%; /* Відміна переповнення зображення */
+    border-radius: 5px; /* Закруглення кутів зображення */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 2px solid #dee2e6; /* Колір рамки зображення */
+}
+
+.category img:hover {
+    transform: scale(1.05); /* Збільшення зображення при наведенні */
+    opacity: 0.9; /* Зменшення прозорості зображення при наведенні */
+    border-color: #adb5bd; /* Зміна коліру рамки зображення при наведенні */
+}
+
+.category h2 {
+    margin: 0; /* Відміна зовнішніх відступів */
+    padding-bottom: 10px; /* Додатковий відступ знизу від заголовка */
+    border-bottom: 1px solid #dee2e6; /* Лінія під заголовком */
+}
+
+.category p {
+    margin-top: 10px; /* Відступ зверху від абзацу */
 }
 
 footer {
-    background-color: #333;
+    background-color: #343a40; /* Темний колір для контрасту */
     color: #fff;
     padding: 20px;
     text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-footer:hover {
-    background-color: #555; /* Зміна фону при наведенні */
 }
